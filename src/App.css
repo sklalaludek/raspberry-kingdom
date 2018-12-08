@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Bakery";
+  src: url("assets/fonts/bakery.ttf");
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url("assets/fonts/Aleo-Regular-webfont.ttf");
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-content__title {
+  font-family: "Bakery";
+  font-size: 50px;
+  color: white;
+  font-weight: 100;
+}
+
+@media (min-width: 768px) {
+  .main-content__title {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-content__title {
+    font-size: 120px;
+  }
+}
+
+.main-content__btn,
+.login-form__btn {
+  font-size: 13px;
+  font-family: "Aleo";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: white;
+  padding: 16px 64px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.main-content__btn {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid white;
+  -webkit-transition: background 1.5s;
+  -moz-transition: background 1.5s;
+  -ms-transition: background 1.5s;
+  -o-transition: background 1.5s;
+  transition: background 1.5s;
+}
+
+.main-content__btn:hover {
+  color: #a2425e;
+  background-color: white;
+}
+
+#form-dialog-title {
+  text-align: center;
+
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form__btn {
+  display: block;
+  background-color: #a2425e;
+  border: 0.1rem solid #a2425e;
+  margin-top: 20px;
+  padding: 10px 64px;
+  -webkit-transition: background 1.5s;
+  -moz-transition: background 1.5s;
+  -ms-transition: background 1.5s;
+  -o-transition: background 1.5s;
+  transition: background 1.5s;
+}
+
+.login-form__btn:hover {
+  background-color: white;
+  color: #a2425e;
+}
+
+.footer {
+  font-size: 7px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  color: lightgray;
+  background-color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    font-size: 10px;
+  }
+
+  .footer__priv span {
+    padding: 0 10px;
+  }
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.footer__copyrights {
+  text-transform: uppercase;
+}
